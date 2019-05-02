@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f5664de-175a-42a3-8ddf-b50359a25ece" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratory Exercises/Lab02/black_white.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab02/black_white.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratory Exercises/Lab02/podvizni_prepreki.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab02/podvizni_prepreki.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratory Exercises/Lab03/podvizni_prepreki.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab03/podvizni_prepreki.py" afterDir="false" />
-    </list>
+    <list default="true" id="8f5664de-175a-42a3-8ddf-b50359a25ece" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab03/black_white.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="534" selection-start-line="534" selection-end-line="534" />
+            <state relative-caret-position="524">
+              <caret line="543" column="35" lean-forward="true" selection-start-line="543" selection-start-column="35" selection-end-line="543" selection-end-column="35" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -77,11 +72,11 @@
       <list>
         <option value="$PROJECT_DIR$/dir/test.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab02/viktor.py" />
-        <option value="$PROJECT_DIR$/Laboratory Exercises/Lab03/black_white.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/informed_search.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab03/podvizni_prepreki.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab02/podvizni_prepreki.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab02/black_white.py" />
+        <option value="$PROJECT_DIR$/Laboratory Exercises/Lab03/black_white.py" />
       </list>
     </option>
   </component>
@@ -292,7 +287,7 @@
       <workItem from="1555438372786" duration="115000" />
       <workItem from="1555438585802" duration="6336000" />
       <workItem from="1555762665420" duration="14147000" />
-      <workItem from="1556790983415" duration="3807000" />
+      <workItem from="1556790983415" duration="3993000" />
     </task>
     <task id="LOCAL-00001" summary="Finish Lab03 podvini_prepreki.py">
       <created>1555851188014</created>
@@ -305,18 +300,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24405000" />
+    <option name="totallyTimeSpent" value="24591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17292225" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2503536" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2503536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab03/black_white.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="534" selection-start-line="534" selection-end-line="534" />
+        <state relative-caret-position="524">
+          <caret line="543" column="35" lean-forward="true" selection-start-line="543" selection-start-column="35" selection-end-line="543" selection-end-column="35" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

@@ -492,6 +492,7 @@ class Podvizni(Problem):
         if self.check_valid_state(curr_state):
             succs['Dolu'] = curr_state
 
+        #print(succs)
         return succs
 
     def check_valid_state(self, curr_state):
@@ -508,6 +509,8 @@ class Podvizni(Problem):
         if (covek_y < 0):
             return False
         if (covek_x < 5 and covek_y > 5):
+            return False
+        if (covek_x >= 5 and covek_y > 10):
             return False
 
         # check [P]repreka 1
@@ -608,5 +611,4 @@ P3 = (7, 8, -1)
 Covek = (CoveceRedica, CoveceKolona)
 init = (Covek, P1, P2, P3)
 podvizni = Podvizni(init, (KukaRedica, KukaKolona))
-rez = breadth_first_graph_search(podvizni)
-print(rez.solution())
+print(breadth_first_graph_search(podvizni).solution())

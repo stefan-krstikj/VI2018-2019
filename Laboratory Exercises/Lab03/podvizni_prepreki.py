@@ -601,7 +601,7 @@ class Podvizni(Problem):
         state = node.state[0]
         return abs(state[0] - self.goal[0]) + abs(state[1] - self.goal[1])
 
-
+ 
 #Vcituvanje na vleznite argumenti za test primerite
 
 CoveceRedica = int(input())
@@ -616,5 +616,4 @@ P3 = (7, 8, -1)
 Covek = (CoveceRedica, CoveceKolona)
 init = (Covek, P1, P2, P3)
 podvizni = Podvizni(init, (KukaRedica, KukaKolona))
-rez = astar_search(podvizni)
-print(rez.solution())
+print(astar_search(podvizni).solution())

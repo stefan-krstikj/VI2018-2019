@@ -541,4 +541,4 @@ polinja = tuple(list(map(int, input().split(','))))
 
 #Vasiot kod pisuvajte go pod ovoj komentar
 abs = BW(n, polinja)
-print(astar_search(abs))
+print(astar_search(abs).solution())

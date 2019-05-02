@@ -466,6 +466,7 @@ class BW(Problem):
 
         for i in range(self.n):
             for j in range(self.n):
+                # convert list to matrix
                 matrica = [[1 for k in range(self.n)] for p in range(self.n)]
                 count = 0
                 for k in range(self.n):
@@ -516,6 +517,7 @@ class BW(Problem):
                 key = "x: {0}, y: {1}".format(i, j)
                 new_state = tuple(lista)
                 successors[key] = new_state
+
         return successors
 
 
@@ -531,7 +533,6 @@ class BW(Problem):
 
 n = int(input())
 polinja = tuple(list(map(int, input().split(','))))
-
 #Vasiot kod pisuvajte go pod ovoj komentar
 abs = BW(n, polinja)
 print(breadth_first_graph_search(abs).solution())

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f5664de-175a-42a3-8ddf-b50359a25ece" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab04/graf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laboratory Exercises/finite_graph_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab04/graf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="631" column="1" selection-start-line="631" selection-start-column="1" selection-end-line="631" selection-end-column="1" />
+            <state relative-caret-position="-880">
+              <caret line="583" lean-forward="true" selection-start-line="583" selection-end-line="583" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="589" column="1" lean-forward="true" selection-start-line="589" selection-start-column="1" selection-end-line="589" selection-end-column="1" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -69,6 +78,7 @@
       <find>solution</find>
       <find>GraphP</find>
       <find>def</find>
+      <find>def h</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,9 +94,9 @@
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab02/podvizni_prepreki.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab02/black_white.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab03/black_white.py" />
-        <option value="$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/finite_graph_search.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab04/graf.py" />
+        <option value="$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py" />
       </list>
     </option>
   </component>
@@ -170,29 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.graf">
-    <configuration name="black_white (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VI2018-2019" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Laboratory Exercises/Lab03" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Laboratory Exercises/Lab03/black_white.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.pateka_vo_graf">
     <configuration name="black_white" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VI2018-2019" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,6 +217,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Laboratory Exercises/Lab04/graf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pateka_vo_graf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VI2018-2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Laboratory Exercises/Lab04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pateka_vo_graf" />
         <item itemvalue="Python.graf" />
         <item itemvalue="Python.black_white" />
         <item itemvalue="Python.podvizni_prepreki" />
         <item itemvalue="Python.podvizni_prepreki (1)" />
-        <item itemvalue="Python.black_white (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +315,7 @@
       <workItem from="1555438585802" duration="6336000" />
       <workItem from="1555762665420" duration="14147000" />
       <workItem from="1556790983415" duration="3993000" />
-      <workItem from="1557217039813" duration="4344000" />
+      <workItem from="1557217039813" duration="7104000" />
     </task>
     <task id="LOCAL-00001" summary="Finish Lab03 podvini_prepreki.py">
       <created>1555851188014</created>
@@ -318,18 +328,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28935000" />
+    <option name="totallyTimeSpent" value="31695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17493297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16690241" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4002829" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,6 +368,7 @@
     <SUITE FILE_PATH="coverage/VI2018_2019$graf.coverage" NAME="graf Coverage Results" MODIFIED="1557221636013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab04" />
     <SUITE FILE_PATH="coverage/VI2018_2019$podvizni_prepreki.coverage" NAME="podvizni_prepreki Coverage Results" MODIFIED="1556793398402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab02" />
     <SUITE FILE_PATH="coverage/VI2018_2019$test.coverage" NAME="test Coverage Results" MODIFIED="1555438617423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dir" />
+    <SUITE FILE_PATH="coverage/VI2018_2019$pateka_vo_graf.coverage" NAME="pateka_vo_graf Coverage Results" MODIFIED="1557225227307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab04" />
     <SUITE FILE_PATH="coverage/VI2018_2019$black_white__1_.coverage" NAME="black_white (1) Coverage Results" MODIFIED="1555850982112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab03" />
     <SUITE FILE_PATH="coverage/VI2018_2019$podvizni_prepreki__1_.coverage" NAME="podvizni_prepreki (1) Coverage Results" MODIFIED="1555851119687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab03" />
   </component>
@@ -440,9 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Laboratory Exercises/finite_graph_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
@@ -465,8 +472,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab04/graf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="631" column="1" selection-start-line="631" selection-start-column="1" selection-end-line="631" selection-end-column="1" />
+        <state relative-caret-position="-880">
+          <caret line="583" lean-forward="true" selection-start-line="583" selection-end-line="583" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="589" column="1" lean-forward="true" selection-start-line="589" selection-start-column="1" selection-end-line="589" selection-end-column="1" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

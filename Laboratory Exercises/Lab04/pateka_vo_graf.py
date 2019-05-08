@@ -21,7 +21,6 @@ class Problem:
         достапни од оваа состојба. Ако има многу следбеници, употребете
         итератор кој би ги генерирал следбениците еден по еден, наместо да
         ги генерирате сите одеднаш.
-
         :param state: дадена состојба
         :return:  речник од парови {акција : состојба} достапни од оваа
                   состојба
@@ -32,7 +31,6 @@ class Problem:
     def actions(self, state):
         """За дадена состојба state, врати листа од сите акции што може да
         се применат над таа состојба
-
         :param state: дадена состојба
         :return: листа на акции
         :rtype: list
@@ -42,7 +40,6 @@ class Problem:
     def result(self, state, action):
         """За дадена состојба state и акција action, врати ја состојбата
         што се добива со примена на акцијата над состојбата
-
         :param state: дадена состојба
         :param action: дадена акција
         :return: резултантна состојба
@@ -56,7 +53,6 @@ class Problem:
         на методот директно ја споредува state со self.goal, како што е
         специфицирана во конструкторот. Имплементирајте го овој метод ако
         проверката со една целна состојба self.goal не е доволна.
-
         :param state: дадена состојба
         :return: дали дадената состојба е целна состојба
         :rtype: bool
@@ -68,10 +64,9 @@ class Problem:
         state2 од состојбата state1 преку акцијата action, претпоставувајќи
         дека цената на патот до состојбата state1 е c. Ако проблемот е таков
         што патот не е важен, оваа функција ќе ја разгледува само состојбата
-        state2. Ако патот е важен, ќе ја разгледува цената c и можеби и
+        state2. Ако патот е важен, ќе ја разгледува цената c и можеби и
         state1 и action. Даденава имплементација му доделува цена 1 на секој
         чекор од патот.
-
         :param c: цена на патот до состојбата state1
         :param state1: дадена моментална состојба
         :param action: акција која треба да се изврши
@@ -82,10 +77,9 @@ class Problem:
         return c + 1
 
     def value(self):
-        """За проблеми на оптимизација, секоја состојба си има вредност. 
+        """За проблеми на оптимизација, секоја состојба си има вредност.
         Hill-climbing и сличните алгоритми се обидуваат да ја максимизираат
         оваа вредност.
-
         :return: вредност на состојба
         :rtype: float
         """
@@ -102,7 +96,6 @@ class Node:
     def __init__(self, state, parent=None, action=None, path_cost=0):
         """Креирај јазол од пребарувачкото дрво, добиен од parent со примена
         на акцијата action
-
         :param state: моментална состојба (current state)
         :param parent: родителска состојба (parent state)
         :param action: акција (action)
@@ -124,7 +117,6 @@ class Node:
 
     def expand(self, problem):
         """Излистај ги јазлите достапни во еден чекор од овој јазол.
-
         :param problem: даден проблем
         :return: листа на достапни јазли во еден чекор
         :rtype: list(Node)
@@ -134,7 +126,6 @@ class Node:
 
     def child_node(self, problem, action):
         """Дете јазел
-
         :param problem: даден проблем
         :param action: дадена акција
         :return: достапен јазел според дадената акција
@@ -147,7 +138,6 @@ class Node:
 
     def solution(self):
         """Врати ја секвенцата од акции за да се стигне од коренот до овој јазол.
-
         :return: секвенцата од акции
         :rtype: list
         """
@@ -155,7 +145,6 @@ class Node:
 
     def solve(self):
         """Врати ја секвенцата од состојби за да се стигне од коренот до овој јазол.
-
         :return: листа од состојби
         :rtype: list
         """
@@ -163,7 +152,6 @@ class Node:
 
     def path(self):
         """Врати ја листата од јазли што го формираат патот од коренот до овој јазол.
-
         :return: листа од јазли од патот
         :rtype: list(Node)
         """
@@ -193,18 +181,17 @@ class Node:
 
 class Queue:
     """Queue е апстрактна класа / интерфејс. Постојат 3 типа:
-        Stack(): Last In First Out Queue (стек).
-        FIFOQueue(): First In First Out Queue (редица).
-        PriorityQueue(order, f): Queue во сортиран редослед (подразбирливо,од најмалиот кон
+        Stack(): Last In First Out Queue (стек).
+        FIFOQueue(): First In First Out Queue (редица).
+        PriorityQueue(order, f): Queue во сортиран редослед (подразбирливо,од најмалиот кон
                                  најголемиот јазол).
-    """
+    """
 
     def __init__(self):
         raise NotImplementedError
 
     def append(self, item):
         """Додади го елементот item во редицата
-
         :param item: даден елемент
         :return: None
         """
@@ -212,7 +199,6 @@ class Queue:
 
     def extend(self, items):
         """Додади ги елементите items во редицата
-
         :param items: дадени елементи
         :return: None
         """
@@ -220,14 +206,12 @@ class Queue:
 
     def pop(self):
         """Врати го првиот елемент од редицата
-
         :return: прв елемент
         """
         raise NotImplementedError
 
     def __len__(self):
         """Врати го бројот на елементи во редицата
-
         :return: број на елементи во редицата
         :rtype: int
         """
@@ -235,7 +219,6 @@ class Queue:
 
     def __contains__(self, item):
         """Проверка дали редицата го содржи елементот item
-
         :param item: даден елемент
         :return: дали queue го содржи item
         :rtype: bool
@@ -446,11 +429,7 @@ class GraphProblem(Problem):
 
     def h(self, node):
         """h function is straight-line distance from a node's state to goal."""
-        locs = getattr(self.graph, 'locations', None)
-        if locs:
-            return int(distance(locs[node.state], locs[self.goal]))
-        else:
-            return math.inf
+        return 1
 
 from sys import maxsize as infinity
 
@@ -464,7 +443,6 @@ def memoize(fn, slot=None):
     аргументи. Ако е специфициран slot, зачувај го резултатот во
     тој slot на првиот аргумент. Ако slot е None, зачувај ги
     резултатите во речник.
-
     :param fn: зададена функција
     :param slot: име на атрибут во кој се чуваат резултатите од функцијата
     :return: функција со модификација за зачувување на резултатите
@@ -492,7 +470,6 @@ def best_first_graph_search(problem, f):
      функција за евалуација за да се одлучи кој е сосед најмногу ветува и
      потоа да се истражи. Ако до дадена состојба стигнат два пата, употреби
      го најдобриот пат.
-
     :param problem: даден проблем
     :param f: дадена функција за евристика
     :return: Node or None
@@ -522,7 +499,6 @@ def best_first_graph_search(problem, f):
 
 def greedy_best_first_graph_search(problem, h=None):
     """ Greedy best-first пребарување се остварува ако се специфицира дека f(n) = h(n).
-
     :param problem: даден проблем
     :param h: дадена функција за евристика
     :return: Node or None
@@ -533,7 +509,6 @@ def greedy_best_first_graph_search(problem, h=None):
 
 def astar_search(problem, h=None):
     """ A* пребарување е best-first graph пребарување каде f(n) = g(n) + h(n).
-
     :param problem: даден проблем
     :param h: дадена функција за евристика
     :return: Node or None
@@ -546,7 +521,6 @@ def recursive_best_first_search(problem, h=None):
     """Recursive best first search - ја ограничува рекурзијата
 	преку следење на f-вредноста на најдобриот алтернативен пат
 	од било кој јазел предок (еден чекор гледање нанапред).
-
     :param problem: даден проблем
     :param h: дадена функција за евристика
     :return: Node or None
@@ -584,11 +558,6 @@ Pocetok = input()
 Kraj = input()
 Stanica = input()
 
-locations = dict(
-    A = (4, 0), B = (5, 3), C = (2, 2),
-    D = (3, 4), E = (0, 2), F = (1, 0)
-)
-
 graph = UndirectedGraph({
     "A": {"B": 7, "C": 9, "F": 14},
     "B": {"C":  10, "D": 15},
@@ -597,6 +566,7 @@ graph = UndirectedGraph({
     "E": {"F": 9}
 })
 
+
 graph_problem_startend = GraphProblem(Pocetok, Kraj, graph)
 graph_problem_stanica1 = GraphProblem(Pocetok, Stanica, graph)
 graph_problem_stanica2 = GraphProblem(Stanica, Kraj, graph)
@@ -604,4 +574,8 @@ graph_problem_stanica2 = GraphProblem(Stanica, Kraj, graph)
 distance1 = astar_search(graph_problem_startend).path_cost
 distance2 = astar_search(graph_problem_stanica1).path_cost + astar_search(graph_problem_stanica2).path_cost - 9
 
-print(str(distance1) + " " + str(distance2))
+#print("Start - Kraj:" + str(astar_search(graph_problem_startend).solve()) + " CENA: " + str(astar_search(graph_problem_startend).path_cost))
+#print("Start - Stanica:" + str(astar_search(graph_problem_stanica1).solve()) + " CENA: " + str(astar_search(graph_problem_stanica1).path_cost))
+#print("Stanica - Kraj:" + str(astar_search(graph_problem_stanica2).solve()) + " CENA: " + str(astar_search(graph_problem_stanica2).path_cost))
+
+print(min(distance1, distance2))

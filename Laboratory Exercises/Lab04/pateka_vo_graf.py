@@ -431,128 +431,127 @@ class GraphProblem(Problem):
         """h function is straight-line distance from a node's state to goal."""
         return 1
 
-from sys import maxsize as infinity
+import sys
 
 """
-Информирано пребарување во рамки на граф
+Неинформирано пребарување во рамки на дрво.
+Во рамки на дрвото не разрешуваме јамки.
 """
 
 
-def memoize(fn, slot=None):
-    """ Запамети ја пресметаната вредност за која била листа од
-    аргументи. Ако е специфициран slot, зачувај го резултатот во
-    тој slot на првиот аргумент. Ако slot е None, зачувај ги
-    резултатите во речник.
-    :param fn: зададена функција
-    :param slot: име на атрибут во кој се чуваат резултатите од функцијата
-    :return: функција со модификација за зачувување на резултатите
-    """
-    if slot:
-        def memoized_fn(obj, *args):
-            if hasattr(obj, slot):
-                return getattr(obj, slot)
-            else:
-                val = fn(obj, *args)
-                setattr(obj, slot, val)
-                return val
-    else:
-        def memoized_fn(*args):
-            if args not in memoized_fn.cache:
-                memoized_fn.cache[args] = fn(*args)
-            return memoized_fn.cache[args]
+def tree_search(problem, fringe):
+    """ Пребарувај низ следбениците на даден проблем за да најдеш цел.
 
-        memoized_fn.cache = {}
-    return memoized_fn
-
-
-def best_first_graph_search(problem, f):
-    """Пребарувај низ следбениците на даден проблем за да најдеш цел. Користи
-     функција за евалуација за да се одлучи кој е сосед најмногу ветува и
-     потоа да се истражи. Ако до дадена состојба стигнат два пата, употреби
-     го најдобриот пат.
     :param problem: даден проблем
-    :param f: дадена функција за евристика
-    :return: Node or None
+    :param fringe:  празна редица (queue)
+    :return: Node
     """
-    f = memoize(f, 'f')
-    node = Node(problem.initial)
-    if problem.goal_test(node.state):
-        return node
-    frontier = PriorityQueue(min, f)
-    frontier.append(node)
-    explored = set()
-    while frontier:
-        node = frontier.pop()
+    fringe.append(Node(problem.initial))
+    while fringe:
+        node = fringe.pop()
+        print(node.state)
         if problem.goal_test(node.state):
             return node
-        explored.add(node.state)
-        for child in node.expand(problem):
-            if child.state not in explored and child not in frontier:
-                frontier.append(child)
-            elif child in frontier:
-                incumbent = frontier[child]
-                if f(child) < f(incumbent):
-                    del frontier[incumbent]
-                    frontier.append(child)
+        fringe.extend(node.expand(problem))
     return None
 
 
-def greedy_best_first_graph_search(problem, h=None):
-    """ Greedy best-first пребарување се остварува ако се специфицира дека f(n) = h(n).
+def breadth_first_tree_search(problem):
+    """Експандирај го прво најплиткиот јазол во пребарувачкото дрво.
+
     :param problem: даден проблем
-    :param h: дадена функција за евристика
-    :return: Node or None
+    :return: Node
     """
-    h = memoize(h or problem.h, 'h')
-    return best_first_graph_search(problem, h)
+    return tree_search(problem, FIFOQueue())
 
 
-def astar_search(problem, h=None):
-    """ A* пребарување е best-first graph пребарување каде f(n) = g(n) + h(n).
+def depth_first_tree_search(problem):
+    """Експандирај го прво најдлабокиот јазол во пребарувачкото дрво.
+
+    :param problem:даден проблем
+    :return: Node
+    """
+    return tree_search(problem, Stack())
+
+
+"""
+Неинформирано пребарување во рамки на граф
+Основната разлика е во тоа што овде не дозволуваме јамки, 
+т.е. повторување на состојби
+"""
+
+
+def graph_search(problem, fringe):
+    """Пребарувај низ следбениците на даден проблем за да најдеш цел.
+     Ако до дадена состојба стигнат два пата, употреби го најдобриот пат.
+
     :param problem: даден проблем
-    :param h: дадена функција за евристика
-    :return: Node or None
+    :param fringe: празна редица (queue)
+    :return: Node
     """
-    h = memoize(h or problem.h, 'h')
-    return best_first_graph_search(problem, lambda n: n.path_cost + h(n))
-
-
-def recursive_best_first_search(problem, h=None):
-    """Recursive best first search - ја ограничува рекурзијата
-	преку следење на f-вредноста на најдобриот алтернативен пат
-	од било кој јазел предок (еден чекор гледање нанапред).
-    :param problem: даден проблем
-    :param h: дадена функција за евристика
-    :return: Node or None
-    """
-    h = memoize(h or problem.h, 'h')
-
-    def RBFS(problem, node, flimit):
+    closed = set()
+    fringe.append(Node(problem.initial))
+    while fringe:
+        node = fringe.pop()
         if problem.goal_test(node.state):
-            return node, 0  # (втората вредност е неважна)
-        successors = node.expand(problem)
-        if len(successors) == 0:
-            return None, infinity
-        for s in successors:
-            s.f = max(s.path_cost + h(s), node.f)
-        while True:
-            # Подреди ги според најниската f вредност
-            successors.sort(key=lambda x: x.f)
-            best = successors[0]
-            if best.f > flimit:
-                return None, best.f
-            if len(successors) > 1:
-                alternative = successors[1].f
-            else:
-                alternative = infinity
-            result, best.f = RBFS(problem, best, min(flimit, alternative))
-            if result is not None:
-                return result, best.f
+            return node
+        if node.state not in closed:
+            closed.add(node.state)
+            fringe.extend(node.expand(problem))
+    return None
 
-    node = Node(problem.initial)
-    node.f = h(node)
-    result, bestf = RBFS(problem, node, infinity)
-    return result
+
+def breadth_first_graph_search(problem):
+    """Експандирај го прво најплиткиот јазол во пребарувачкиот граф.
+
+    :param problem: даден проблем
+    :return: Node
+    """
+    return graph_search(problem, FIFOQueue())
+
+
+def depth_first_graph_search(problem):
+    """Експандирај го прво најдлабокиот јазол во пребарувачкиот граф.
+
+    :param problem: даден проблем
+    :return: Node
+    """
+    return graph_search(problem, Stack())
+
+
+def depth_limited_search(problem, limit=50):
+    def recursive_dls(node, problem, limit):
+        """Помошна функција за depth limited"""
+        cutoff_occurred = False
+        if problem.goal_test(node.state):
+            return node
+        elif node.depth == limit:
+            return 'cutoff'
+        else:
+            for successor in node.expand(problem):
+                result = recursive_dls(successor, problem, limit)
+                if result == 'cutoff':
+                    cutoff_occurred = True
+                elif result is not None:
+                    return result
+        if cutoff_occurred:
+            return 'cutoff'
+        return None
+
+    return recursive_dls(Node(problem.initial), problem, limit)
+
+
+def iterative_deepening_search(problem):
+    for depth in range(sys.maxsize):
+        result = depth_limited_search(problem, depth)
+        if result is not 'cutoff':
+            return result
+
+
+def uniform_cost_search(problem):
+    """Експандирај го прво јазолот со најниска цена во пребарувачкиот граф."""
+    return graph_search(problem, PriorityQueue(min, lambda a: a.path_cost))
+
 
 Pocetok = input()
 Kraj = input()
@@ -571,8 +570,8 @@ graph_problem_startend = GraphProblem(Pocetok, Kraj, graph)
 graph_problem_stanica1 = GraphProblem(Pocetok, Stanica, graph)
 graph_problem_stanica2 = GraphProblem(Stanica, Kraj, graph)
 
-distance1 = astar_search(graph_problem_startend).path_cost
-distance2 = astar_search(graph_problem_stanica1).path_cost + astar_search(graph_problem_stanica2).path_cost - 9
+distance1 = uniform_cost_search(graph_problem_startend).path_cost
+distance2 = uniform_cost_search(graph_problem_stanica1).path_cost + uniform_cost_search(graph_problem_stanica2).path_cost - 9
 
 #print("Start - Kraj:" + str(astar_search(graph_problem_startend).solve()) + " CENA: " + str(astar_search(graph_problem_startend).path_cost))
 #print("Start - Stanica:" + str(astar_search(graph_problem_stanica1).solve()) + " CENA: " + str(astar_search(graph_problem_stanica1).path_cost))

@@ -120,5 +120,4 @@ def iterative_deepening_search(problem):
 
 def uniform_cost_search(problem):
     """Експандирај го прво јазолот со најниска цена во пребарувачкиот граф."""
-    return graph_search(problem, PriorityQueue(lambda a, b:
-                                               a.path_cost < b.path_cost))
+    return graph_search(problem, PriorityQueue(min, lambda a: a.path_cost))

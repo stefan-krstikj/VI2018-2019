@@ -391,5 +391,44 @@ data = [[242.0, 23.2, 25.4, 30.0, 38.4, 13.4, 1],
 
 if __name__ == "__main__":
     index = int(input())
-    solution = build_tree(data)
-    print (solution)
+
+    training = []
+
+    no1 = 0
+    no2 = 0
+    no3 = 0
+    no4 = 0
+    no5 = 0
+    no6 = 0
+    no7 = 0
+
+    for row in data:
+        if row[-1] == 1 and no1 < 5:
+            training.append(row)
+            no1 += 1
+        elif row[-1] == 2 and no2 < 5:
+            training.append(row)
+            no2 += 1
+        elif row[-1] == 3 and no3 < 5:
+            training.append(row)
+            no3 += 1
+        elif row[-1] == 4 and no4 < 5:
+            training.append(row)
+            no4 += 1
+        elif row[-1] == 5 and no5 < 5:
+            training.append(row)
+            no5 += 1
+        elif row[-1] == 6 and no6 < 5:
+            training.append(row)
+            no6 += 1
+        elif row[-1] == 7 and no7 < 5:
+            training.append(row)
+            no7 += 1
+
+    #print(training)
+
+    element = data[index]
+
+    tree = build_tree(training)
+    solution = classify(element, tree)
+    print (list(solution)[0])

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f5664de-175a-42a3-8ddf-b50359a25ece" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab05/drva_na_odlucuvanje.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab05/validacija.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laboratory Exercises/decision_tree_learning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laboratory Exercises/neural_network_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratory Exercises/uninformed_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory Exercises/uninformed_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory Exercises/Lab05/drva_na_odlucuvanje.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory Exercises/Lab05/drva_na_odlucuvanje.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,48 +12,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab05/validacija.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="365" column="19" lean-forward="true" selection-start-line="365" selection-start-column="19" selection-end-line="365" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/av11_example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="28" column="54" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="28" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Laboratory Exercises/neural_network_learning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="9" column="10" selection-end-line="174" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboratory Exercises/decision_tree_learning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="10" column="11" selection-end-line="228" />
+            <state relative-caret-position="33">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab05/drva_na_odlucuvanje.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="421" column="32" lean-forward="true" selection-start-line="421" selection-start-column="32" selection-end-line="421" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/av10_example.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-300" />
           </provider>
         </entry>
       </file>
@@ -99,8 +75,8 @@
         <option value="$PROJECT_DIR$/Laboratory Exercises/finite_graph_search.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab04/graf.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab04/pateka_vo_graf.py" />
-        <option value="$PROJECT_DIR$/Laboratory Exercises/Lab05/drva_na_odlucuvanje.py" />
         <option value="$PROJECT_DIR$/Laboratory Exercises/Lab05/validacija.py" />
+        <option value="$PROJECT_DIR$/Laboratory Exercises/Lab05/drva_na_odlucuvanje.py" />
       </list>
     </option>
   </component>
@@ -189,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.validacija">
+  <component name="RunManager" selected="Python.drva_na_odlucuvanje">
     <configuration name="black_white" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VI2018-2019" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -302,8 +278,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.validacija" />
         <item itemvalue="Python.drva_na_odlucuvanje" />
+        <item itemvalue="Python.validacija" />
         <item itemvalue="Python.pateka_vo_graf" />
         <item itemvalue="Python.graf" />
         <item itemvalue="Python.black_white" />
@@ -325,7 +301,7 @@
       <workItem from="1555762665420" duration="14147000" />
       <workItem from="1556790983415" duration="3993000" />
       <workItem from="1557217039813" duration="7104000" />
-      <workItem from="1558709647973" duration="3553000" />
+      <workItem from="1558709647973" duration="6073000" />
     </task>
     <task id="LOCAL-00001" summary="Finish Lab03 podvini_prepreki.py">
       <created>1555851188014</created>
@@ -338,18 +314,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35248000" />
+    <option name="totallyTimeSpent" value="37768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1769437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1769437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23903818" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23903818" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -382,7 +357,7 @@
     <SUITE FILE_PATH="coverage/VI2018_2019$pateka_vo_graf.coverage" NAME="pateka_vo_graf Coverage Results" MODIFIED="1557225227307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab04" />
     <SUITE FILE_PATH="coverage/VI2018_2019$validacija.coverage" NAME="validacija Coverage Results" MODIFIED="1558714750065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab05" />
     <SUITE FILE_PATH="coverage/VI2018_2019$black_white__1_.coverage" NAME="black_white (1) Coverage Results" MODIFIED="1555850982112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab03" />
-    <SUITE FILE_PATH="coverage/VI2018_2019$drva_na_odlucuvanje.coverage" NAME="drva_na_odlucuvanje Coverage Results" MODIFIED="1558711124173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab05" />
+    <SUITE FILE_PATH="coverage/VI2018_2019$drva_na_odlucuvanje.coverage" NAME="drva_na_odlucuvanje Coverage Results" MODIFIED="1558717963041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab05" />
     <SUITE FILE_PATH="coverage/VI2018_2019$podvizni_prepreki__1_.coverage" NAME="podvizni_prepreki (1) Coverage Results" MODIFIED="1555851119687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Laboratory Exercises/Lab03" />
   </component>
   <component name="editorHistoryManager">
@@ -486,24 +461,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/decision_tree_learning.py">
+    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab05/validacija.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="10" column="11" selection-end-line="228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab05/drva_na_odlucuvanje.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="394" column="10" selection-start-line="394" selection-start-column="10" selection-end-line="394" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/neural_network_learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="9" column="10" selection-end-line="174" />
+        <state relative-caret-position="120">
+          <caret line="365" column="19" lean-forward="true" selection-start-line="365" selection-start-column="19" selection-end-line="365" selection-end-column="19" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -520,13 +481,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab05/validacija.py">
+    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/neural_network_learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="365" column="19" lean-forward="true" selection-start-line="365" selection-start-column="19" selection-end-line="365" selection-end-column="19" />
+        <state relative-caret-position="-7">
+          <caret line="9" column="10" selection-end-line="174" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/av10_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/decision_tree_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboratory Exercises/Lab05/drva_na_odlucuvanje.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="421" column="32" lean-forward="true" selection-start-line="421" selection-start-column="32" selection-end-line="421" selection-end-column="32" />
         </state>
       </provider>
     </entry>
